@@ -1,0 +1,49 @@
+#!/bin/bash
+# Simple Script to rebuild the fonts in this package.
+
+# Parameters
+fontname="Raleway"
+vend="impallari"
+
+# Remove capitals from font
+font=${fontname,,}
+
+# Backup the hand-written package
+mv tex/latex/$font/$font.sty tex/latex/$font/$font.sty.tmp
+
+
+# Font features (Version 3.00)
+#aalt	Access All Alternates
+#dlig	Discretionary Ligatures
+#kern	Kerning
+#liga	Standard Ligatures
+#lnum	Lining Figures
+#onum	Oldstyle Figures
+#salt	Stylistic Alternates
+#smcp	Small Capitals
+#ss01	Stylistic Set 1
+#ss02	Stylistic Set 2
+
+autoinst fonts/opentype/$vend/$font/*	\
+	-sanserif							\
+	-target=.							\
+	-vendor="$vend"						\
+	-typeface="$font"					\
+	-encoding=OT1,T1,LY1,TS1			\
+	-ts1								\
+	-smallcaps							\
+	-superiors							\
+	-inferiors							\
+	-fractions							\
+	-noswash							\
+	-notitling							\
+	-noornaments						\
+	-noupdmap
+
+# Move the generated file and the hand-written one back
+mv tex/latex/$font/$fontname.sty tex/latex/$font/$font-type1-autoinst.sty
+mv tex/latex/$font/$font.sty.tmp tex/latex/$font/$font.sty
+
+# Remove empty directories
+find . -type d -empty -delete
+

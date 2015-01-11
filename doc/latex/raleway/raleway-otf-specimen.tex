@@ -1,0 +1,36 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{array}
+\usepackage[default,opentype]{raleway}
+\usepackage[margin=0mm,paperheight=55mm,paperwidth=205mm]{geometry}
+
+\newcommand*\spA{abcde}
+\newcommand*\spB{01469}
+\newcommand*\spr[1][\spA]{& #1 & #1 & #1 & #1 & #1 & #1 & #1 & #1 & #1\\}
+\begin{document}
+\centering
+\begin{tabular}{
+		>{}l
+		>{\ralewaythin}c
+		>{\ralewayextra}c
+		>{\ralewaylight}c
+		>{\raleway}c
+		>{\ralewaymedium}c
+		>{\ralewaylight\bfseries}c
+		>{\raleway\bfseries}c
+		>{\ralewayextra\bfseries}c
+		>{\ralewaythin\bfseries}c }
+	& Thin & ExtraLight & Light & Regular & Medium & Semibold & Bold & Extrabold & Black \\
+	normal               \spr
+	italic               \spr[\itshape\spA]
+	small-caps           \spr[\scshape\spA]
+	italic small-caps    \spr[\scshape\itshape\spA]
+	capitals             \spr[\MakeUppercase\spA]
+	italic capitals      \spr[\itshape\MakeUppercase\spA]
+	lining               \spr[\liningnums{\spB}]
+	lining italic        \spr[\liningnums{\itshape\spB}]
+%	lining small-caps    \spr[\liningnums{\scshape\spB}]
+	old-style            \spr[\oldstylenums{\spB}]
+	old-style italic     \spr[\oldstylenums{\itshape\spB}]
+%	old-style small-caps \spr[\oldstylenums{\scshape\spB}]
+\end{tabular}
+\end{document}
