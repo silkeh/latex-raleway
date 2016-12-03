@@ -1,5 +1,5 @@
-Raleway 1.3
-===========
+Raleway
+=======
 This package provides the Raleway font family as a LaTeX package.
 Full documentation and revision history in `raleway.pdf`.
 
