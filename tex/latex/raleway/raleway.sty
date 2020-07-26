@@ -69,20 +69,20 @@
 % Load OpenType files
 \ifraleway@otf
 	\RequirePackage{fontspec}
-	
+
 	% Oldstyle/Lining
 	\ifraleway@oldstyle
 		\def\raleway@figurestyle{OldStyle}
 	\else
 		\def\raleway@figurestyle{Lining}
 	\fi
-	
+
 	% Black/Semibold/Bold
 	\ifraleway@extrabold
 		\def\raleway@boldstyle{ExtraBold}
 	\else
 		\ifraleway@semibold
-			\def\raleway@boldstyle{Semibold}
+			\def\raleway@boldstyle{SemiBold}
 		\else
 			\ifraleway@black
 				\def\raleway@boldstyle{Black}
@@ -91,7 +91,7 @@
 			\fi
 		\fi
 	\fi
-	
+
 	% Light/ExtraLight/Regular/Medium
 	\ifraleway@light
 		\def\raleway@regstyle{Light}
@@ -110,14 +110,14 @@
 			\fi
 		\fi
 	\fi
-	
+
 	% Shared features
 	\defaultfontfeatures{
 		Ligatures = TeX ,
 		Numbers   = \raleway@figurestyle ,
 		Scale     = \Raleway@scale ,
 		Extension = .otf }
-	
+
 	% Sans serif font
 	\ifraleway@sfdefault
 		\setsansfont
@@ -128,7 +128,7 @@
 			]
 			{Raleway}
 	\fi
-	
+
 	% Font families
 	% Regular/Bold
 	\newfontfamily\raleway
@@ -137,7 +137,7 @@
 		  BoldFont       = *-Bold ,
 		  BoldItalicFont     = *-Bold-Italic ]
 		{Raleway}
-		
+
 	\newfontfamily\ralewaymedium
 		[ UprightFont    = *-Medium ,
 		  ItalicFont     = *-Medium-Italic ,
@@ -152,7 +152,7 @@
 		  BoldFont       = *-SemiBold ,
 		  BoldItalicFont = *-SemiBold-Italic ]
 		{Raleway}
-	
+
 	% Light/Semibold
 	\newfontfamily\ralewaythin
 		[ UprightFont    = *-Thin ,
@@ -160,7 +160,7 @@
 		  BoldFont       = *-Black ,
 		  BoldItalicFont = *-Black-Italic ]
 		{Raleway}
-	
+
 	% ExtraLight/Black
 	\newfontfamily\ralewayextra
 		[ UprightFont    = *-ExtraLight ,
@@ -168,10 +168,10 @@
 		  BoldFont       = *-ExtraBold ,
 		  BoldItalicFont = *-ExtraBold-Italic ]
 		{Raleway}
-	
+
 	% Dont keep all default font features
 	\defaultfontfeatures{}
-	
+
 	\newfontfamily\ralewayLF
 		[ Ligatures      = TeX ,
 		  Numbers        = Lining ,
@@ -187,21 +187,21 @@
 \else
 	\RequirePackage[OT1,LY1,T1]{fontenc}
 	\RequirePackage{mweights}
-	
+
 	% Tabular/Proportional
 	\ifraleway@tabular
 		\def\raleway@figurealign{T}
 	\else
 		\def\raleway@figurealign{T}
 	\fi
-	
+
 	% Oldstyle/Lining
 	\ifraleway@oldstyle
 		\def\raleway@figurestyle{OsF}
 	\else
 		\def\raleway@figurestyle{LF}
 	\fi
-	
+
 	% Black/Semibold/Bold
 	\ifraleway@extrabold
 		\def\bfseries@sf{eb}
@@ -216,7 +216,7 @@
 			\fi
 		\fi
 	\fi
-	
+
 	% Light/ExtraLight/Regular/Medium/Thin
 	\ifraleway@light
 		\def\mdseries@sf{l}
@@ -240,7 +240,7 @@
 	\ifraleway@sfdefault
 		\edef\sfdefault{Raleway-\raleway@figurealign\raleway@figurestyle}
 	\fi
-	
+
 	% If Raleway is the default font \oldstylenums needs a new definition.
 	\ifraleway@default
 		\renewcommand*\oldstylenums[1]{%
