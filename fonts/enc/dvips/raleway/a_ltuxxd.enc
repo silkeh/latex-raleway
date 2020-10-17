@@ -1,0 +1,66 @@
+% THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
+
+%%AutoEnc_ltuxxdnvqtc2eteeg5oxul3nrb
+% Encoding created by otftotfm on Sat Oct 17 17:34:55 2020
+% Command line follows encoding
+/AutoEnc_ltuxxdnvqtc2eteeg5oxul3nrb [
+%00
+  /endash /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%10
+  /.notdef /.notdef /.notdef /.notdef /uni032E /.notdef /.notdef /.notdef
+  /Euro /perthousand /uni0259 /.notdef /quoteleft /quoteright /breve /macron
+%20
+  /.notdef /exclam /dieresis /.notdef /.notdef /percent /periodcentered /.notdef
+  /parenleft /parenright /asterisk /plus /comma /hyphen /period /slash
+%30
+  /zero.lf /one.lf /two.lf /three.lf /four.lf /five.lf /six.lf /seven.lf
+  /eight.lf /nine.lf /colon /.notdef /.notdef /equal /.notdef /semicolon
+%40
+  /.notdef /.notdef /.notdef /.notdef /uni2206 /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%50
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /uni2126
+  /.notdef /.notdef /.notdef /bracketleft /.notdef /bracketright /.notdef /.notdef
+%60
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /uni00B5 /.notdef /.notdef
+%70
+  /pi /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /guillemotleft /.notdef /guillemotright /.notdef /emdash
+%80
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%90
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%A0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%B0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%C0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%D0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%E0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%F0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+] def
+% Command line: 'otftotfm --automatic --encoding=fontools_lgr
+% --tfm-directory=fonts/tfm/theleagueof/raleway
+% --vf-directory=fonts/vf/theleagueof/raleway
+% --type1-directory=fonts/type1/theleagueof/raleway
+% --encoding-directory=fonts/enc/dvips/raleway
+% --map-file=fonts/map/dvips/raleway/Raleway.map --no-updmap --force
+% --coding-scheme=GREEK FONT ENCODING - LGR --feature=kern --feature=liga
+% --feature=lnum --ligkern=f i =: fi --ligkern=f l =: fl --ligkern=f f =: ff
+% --ligkern=ff i =: ffi --ligkern=ff l =: ffl
+% fonts/opentype/theleagueof/raleway/Raleway-Black.otf
+% Raleway-Black-tlf-lgr'

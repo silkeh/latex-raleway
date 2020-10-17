@@ -122,9 +122,9 @@
 	\ifraleway@sfdefault
 		\setsansfont
 			[ UprightFont    = *-\raleway@regstyle ,
-			  ItalicFont     = *-\raleway@regstyle-Italic ,
+			  ItalicFont     = *-\raleway@regstyle Italic ,
 			  BoldFont       = *-\raleway@boldstyle ,
-			  BoldItalicFont = *-\raleway@boldstyle-Italic
+			  BoldItalicFont = *-\raleway@boldstyle Italic
 			]
 			{Raleway}
 	\fi
@@ -133,40 +133,40 @@
 	% Regular/Bold
 	\newfontfamily\raleway
 		[ UprightFont    = *-Regular ,
-		  ItalicFont     = *-Regular-Italic ,
+		  ItalicFont     = *-RegularItalic ,
 		  BoldFont       = *-Bold ,
-		  BoldItalicFont     = *-Bold-Italic ]
+		  BoldItalicFont     = *-BoldItalic ]
 		{Raleway}
 
 	\newfontfamily\ralewaymedium
 		[ UprightFont    = *-Medium ,
-		  ItalicFont     = *-Medium-Italic ,
+		  ItalicFont     = *-MediumItalic ,
 		  BoldFont       = *-Bold ,
-		  BoldItalicFont = *-Bold-Italic ]
+		  BoldItalicFont = *-BoldItalic ]
 		{Raleway}
 
 	% Light/Semibold
 	\newfontfamily\ralewaylight
 		[ UprightFont    = *-Light ,
-		  ItalicFont     = *-Light-Italic ,
+		  ItalicFont     = *-LightItalic ,
 		  BoldFont       = *-SemiBold ,
-		  BoldItalicFont = *-SemiBold-Italic ]
+		  BoldItalicFont = *-SemiBoldItalic ]
 		{Raleway}
 
 	% Light/Semibold
 	\newfontfamily\ralewaythin
 		[ UprightFont    = *-Thin ,
-		  ItalicFont     = *-Thin-Italic ,
+		  ItalicFont     = *-ThinItalic ,
 		  BoldFont       = *-Black ,
-		  BoldItalicFont = *-Black-Italic ]
+		  BoldItalicFont = *-BlackItalic ]
 		{Raleway}
 
 	% ExtraLight/Black
 	\newfontfamily\ralewayextra
 		[ UprightFont    = *-ExtraLight ,
-		  ItalicFont     = *-ExtraLight-Italic ,
+		  ItalicFont     = *-ExtraLightItalic ,
 		  BoldFont       = *-ExtraBold ,
-		  BoldItalicFont = *-ExtraBold-Italic ]
+		  BoldItalicFont = *-ExtraBoldItalic ]
 		{Raleway}
 
 	% Dont keep all default font features
@@ -178,9 +178,9 @@
 		  Scale          = \Raleway@scale ,
 		  Extension      = .otf ,
 		  UprightFont    = *-\raleway@regstyle ,
-		  ItalicFont     = *-\raleway@regstyle-Italic ,
+		  ItalicFont     = *-\raleway@regstyle Italic ,
 		  BoldFont       = *-\raleway@boldstyle ,
-		  BoldItalicFont = *-\raleway@boldstyle-Italic ]
+		  BoldItalicFont = *-\raleway@boldstyle Italic ]
 		{Raleway}
 
 % Load type1 font.
@@ -210,7 +210,7 @@
 			\def\bfseries@sf{sb}
 		\else
 			\ifraleway@black
-				\def\bfseries@sf{k}
+				\def\bfseries@sf{ub}
 			\else
 				\def\bfseries@sf{b}
 			\fi
@@ -225,10 +225,10 @@
 			\def\mdseries@sf{el}
 		\else
 			\ifraleway@thin
-				\def\mdseries@sf{t}
+				\def\mdseries@sf{ul}
 			\else
 				\ifraleway@medium
-					\def\mdseries@sf{mb}
+					\def\mdseries@sf{medium}
 				\else
 					\def\mdseries@sf{m}
 				\fi

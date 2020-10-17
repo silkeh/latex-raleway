@@ -3,7 +3,7 @@
 
 # Parameters
 fontname="Raleway"
-vend="impallari"
+vend="theleagueof"
 
 # Remove capitals from font
 font=${fontname,,}
@@ -17,8 +17,10 @@ autoinst fonts/opentype/$vend/$font/*   \
     -target=.                           \
     -vendor="$vend"                     \
     -typeface="$font"                   \
-    -encoding=OT1,T1,LY1,TS1            \
+    -encoding=OT1,T1,LY1,TS1,LGR        \
     -ts1                                \
+    -lining                             \
+    -oldstyle                           \
     -smallcaps                          \
     -superiors                          \
     -inferiors                          \
@@ -26,7 +28,7 @@ autoinst fonts/opentype/$vend/$font/*   \
     -noswash                            \
     -notitling                          \
     -noornaments                        \
-    -noupdmap
+    -defaultoldstyle
 
 # Move the generated file and the hand-written one back
 mv tex/latex/$font/$fontname.sty tex/latex/$font/$font-type1-autoinst.sty
