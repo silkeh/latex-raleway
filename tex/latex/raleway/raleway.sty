@@ -63,7 +63,7 @@
 \DeclareOptionX{otf}         {\raleway@otftrue}
 
 % Default options
-\ExecuteOptionsX{sfdefault,lining,bold,regular}
+\ExecuteOptionsX{sfdefault,oldstyle,bold,regular}
 \ProcessOptionsX\relax
 
 % Load OpenType files
@@ -192,7 +192,7 @@
 	\ifraleway@tabular
 		\def\raleway@figurealign{T}
 	\else
-		\def\raleway@figurealign{T}
+		\def\raleway@figurealign{}
 	\fi
 
 	% Oldstyle/Lining

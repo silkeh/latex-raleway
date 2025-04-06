@@ -3,6 +3,14 @@
 \usepackage[default,type1]{raleway}
 \usepackage[T1]{fontenc}
 
+\makeatletter
+\newcommand*\liningnums[1]{%
+  \begingroup
+  \fontfamily{Raleway-LF}\selectfont #1%
+  \endgroup
+}
+\makeatother
+
 \newcommand*\spA{abcde}
 \newcommand*\spB{01469}
 \newcommand*\spr[1][\spA]{& #1 & #1 & #1 & #1 & #1 & #1 & #1 & #1 & #1\\}
@@ -25,7 +33,7 @@
 	italic small-caps    \spr[\scshape\itshape\spA]
 	capitals             \spr[\MakeUppercase\spA]
 	italic capitals      \spr[\itshape\MakeUppercase\spA]
-	lining               \spr[\spB]
+	lining               \spr[\liningnums{\spB}]
 %	lining italic        \spr[\itshape\spB]
 %	lining small-caps    \spr[\scshape\spB]
 	old-style            \spr[\oldstylenums{\spB}]

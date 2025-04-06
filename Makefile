@@ -39,6 +39,8 @@ $(PKG_OUT): $(OTF_DIR)/$(OTF_NAME)-Regular.otf $(ENCS)
 		-vendor="$(VENDOR)"                 \
 		-typeface="$(PACKAGE)"              \
 		-encoding=OT1,T1,LY1,TS1            \
+		-defaultoldstyle                    \
+		-defaultproportional                \
 		-ts1                                \
 		-smallcaps                          \
 		-superiors                          \
