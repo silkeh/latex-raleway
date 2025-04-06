@@ -204,15 +204,15 @@
 
 	% Black/Semibold/Bold
 	\ifraleway@extrabold
-		\def\bfseries@sf{eb}
+		\def\bfseries@sf{extrabold}
 	\else
 		\ifraleway@semibold
-			\def\bfseries@sf{sb}
+			\def\bfseries@sf{semibold}
 		\else
 			\ifraleway@black
-				\def\bfseries@sf{ub}
+				\def\bfseries@sf{black}
 			\else
-				\def\bfseries@sf{b}
+				\def\bfseries@sf{bold}
 			\fi
 		\fi
 	\fi
@@ -222,15 +222,15 @@
 		\def\mdseries@sf{l}
 	\else
 		\ifraleway@extralight
-			\def\mdseries@sf{el}
+			\def\mdseries@sf{extralight}
 		\else
 			\ifraleway@thin
-				\def\mdseries@sf{t}
+				\def\mdseries@sf{thin}
 			\else
 				\ifraleway@medium
 					\def\mdseries@sf{medium}
 				\else
-					\def\mdseries@sf{m}
+					\def\mdseries@sf{regular}
 				\fi
 			\fi
 		\fi
