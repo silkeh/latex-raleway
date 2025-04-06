@@ -106,16 +106,26 @@ A complete list of available font features is available on page \pageref{sec:otf
 \section{Type1}
 The following Type1 font families are included:
 \begin{itemize*}
-%	\item Raleway-LF
-	\item Raleway-TLF
-%	\item Raleway-OsF
-	\item Raleway-TOsF
+	\item Raleway-LF
+%	\item Raleway-TLF
+	\item Raleway-OsF
+%	\item Raleway-TOsF
 \end{itemize*}
-With series ‘t’, ‘el’, ‘l’, ‘m’, ‘mb’, ‘sb’, ‘b’, ‘eb’, ‘k’ and shapes ‘n’ and ‘sc’, ‘it’ and ‘scit’.
+
+With series ‘ul’, ‘el’, ‘l’, ‘m’, ‘medium’, ‘sb’, ‘b’, ‘eb’, ‘ub’ and shapes ‘n’ and ‘sc’, ‘it’ and ‘scit’.
 
 \textbf{Please note:} to use italic smallcaps the \texttt{slantsc} package is required.
 
 \section{Version history}
+\subsection*{1.6}
+\begin{itemize*}
+\item Fonts updated to v4.101
+\item Italic lining figures are no longer supported.
+\item Type1 series for ‘Thin’ changed to ‘ul’.
+\item Type1 series for ‘Black’ changed to ‘ub’.
+\item Type1 series for ‘Medium’ changed to ‘medium’
+\end{itemize*}
+
 \subsection*{1.5}
 \begin{itemize*}
 \item Fixed the \texttt{semibold} option.
@@ -178,15 +188,34 @@ This table can also be found in \file{raleway-type1-specimen}.
 	\centering
 	\begin{tabular}{>{\ttfamily}l l}
 		aalt & Access All Alternates \\
+		c2sc & Small Capitals From Capitals \\
+		ccmp & Glyph Composition/Decomposition \\
 		dlig & Discretionary Ligatures \\
+		dnom & Denominators \\
+		frac & Fractions \\
 		kern & Kerning \\
 		liga & Standard Ligatures \\
 		lnum & Lining Figures \\
-		onum & Oldstyle Figures \\
+		mark & Mark Positioning \\
+		mkmk & Mark to Mark Positioning \\
+		numr & Numerators \\
+		ordn & Ordinals \\
 		salt & Stylistic Alternates \\
+		sinf & Scientific Inferiors \\
 		smcp & Small Capitals \\
 		ss01 & Stylistic Set 1 \\
 		ss02 & Stylistic Set 2 \\
+		ss03 & Stylistic Set 3 \\
+		ss04 & Stylistic Set 4 \\
+		ss05 & Stylistic Set 5 \\
+		ss06 & Stylistic Set 6 \\
+		ss07 & Stylistic Set 7 \\
+		ss08 & Stylistic Set 8 \\
+		ss09 & Stylistic Set 9 \\
+		ss10 & Stylistic Set 10 \\
+		ss11 & Stylistic Set 11 \\
+		subs & Subscript \\
+		sups & Superscript \\
 	\end{tabular}
 \end{figure}
 (list generated with otfinfo)
