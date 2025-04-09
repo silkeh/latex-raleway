@@ -1,7 +1,7 @@
 Raleway
 =======
 This package provides the Raleway font family as a LaTeX package.
-Full documentation and revision history in `raleway.pdf`.
+Full documentation and revision history in [the PDF documentation].
 
 Options
 -------
@@ -32,3 +32,5 @@ Fonts are provided under the SIL Open Font License 1.1.
 LaTeX source is licensed under the LPPL version 1.3 or higher.
 
 Enjoy!
+
+[pdf]: https://gitlab.com/slxh/latex/raleway/-/jobs/artifacts/master/file/raleway.pdf?job=build
